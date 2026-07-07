@@ -1,0 +1,75 @@
+/* --- General Reset & Fonts --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    min-height: 100vh;
+    
+    /* --- CSS Grid Layout on Body --- */
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Main gets 75%, Aside gets 25% */
+    grid-template-rows: auto auto 1fr auto; /* Rows for header, nav, main/aside, and footer */
+}
+
+/* Make full-width elements span both columns */
+header, footer {
+    grid-column: 1 / -1;
+}
+
+/* --- Header Styling --- */
+header {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.header-title {
+    padding: 40px 20px;
+    font-size: 1.5rem;
+}
+
+/* --- Navigation Menu (Flexbox) --- */
+nav {
+    background-color: #000000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 15px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- Main Content Area --- */
+main {
+    background-color: #cccccc;
+    color: #000000;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+/* --- Aside Content Area --- */
+aside {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+/* --- Footer Styling --- */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 1.2rem;
+}
