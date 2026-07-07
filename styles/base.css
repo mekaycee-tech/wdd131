@@ -1,0 +1,198 @@
+/* General Layout & Typography Settings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: #fcfcfc;
+    color: #111111;
+}
+
+/* Header Styling */
+header {
+    background-color: #1b4d70;
+    color: white;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    padding: 20px 0 10px 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/* Navigation layout using CSS Flexbox */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #222222;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    flex-grow: 1;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Navigation Hover Effect */
+nav a:hover {
+    background-color: #555555;
+    color: #ffd700;
+}
+
+/* Main content settings */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #222222;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+/* Cards layout using CSS Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+}
+
+/* Card Common Styling */
+.card {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: #1b4d70;
+    color: white;
+    margin: 0;
+    padding: 12px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 15px 0 5px 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #cccccc;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* About Me Content Layout */
+.card-content {
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.card-content p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.profile-img {
+    width: 130px;
+    height: auto;
+    border: 1px solid #777;
+}
+
+/* Flag & Island Description Layout */
+.flag-section {
+    display: flex;
+    padding: 0 15px 15px 15px;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.flag-section p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+.flag-img {
+    width: 140px;
+    height: auto;
+    border: 1px solid #cccccc;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 5px;
+    color: #444444;
+}
+
+/* Web Dev Resources List Styling */
+.resources-list {
+    list-style-type: disc;
+    padding: 25px;
+    margin: 0;
+}
+
+.resources-list li {
+    margin-bottom: 12px;
+}
+
+.resources-list a {
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+.resources-list a:hover {
+    color: #ff0000;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1b4d70;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    color: #ffff00;
+}
+
+/* Responsive design adjustments for small viewports */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .card-content, .flag-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

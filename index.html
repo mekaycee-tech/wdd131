@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Kelechi David Agoro</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals course landing page by Kelechi David Agoro. Includes personal introduction, Web Dev resources, and dynamic footer dates.">
+    <meta name="author" content="Kelechi David Agoro">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131-Kelechi</h1>
+
+    <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.comhttps://www.linkedin.com/in/kelechi-agoro-a29694151/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/22?lang=eng" target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Kelechi David Agoro</h1>
+        
+        <div class="grid-container">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="card-content">
+                    <p>My name is Kelechi and I go by Kaycee. I was born in Uturu in the South-Eastern part of Nigeria and live with my family there. Currently, I am working as a computer operator in Marist Business Centre. I am also running my Associate Degree at BYU-Idaho. My family and friends are my world and I love spending time with them. I love to travel and I love to learn new things.</p>
+                    <img src="images/profile.jpg" alt="Profile picture of Kelechi" class="profile-img">
+                </div>
+                
+                <hr>
+                <h3>Abia, Nigeria</h3>
+                
+                <div class="flag-section">
+                    <figure>
+                        <img src="images/flag.png" alt="Official Flag of Nigeria" class="flag-img">
+                        <figcaption>Official Flag of Nigeria</figcaption>
+                    </figure>
+                    <p>Nigeria is the largest country in Africa and is located in West Africa. It is home to over 250 ethnic groups and has a rich cultural heritage. The country is known for its diverse landscapes, from the beaches of the Gulf of Guinea to the savannas of the north.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul class="resources-list">
+                    <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+                    <li><a href="https://picsum.photos" target="_blank">Lorem Picsum Image Placeholder</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌺 Kelechi David Agoro 🌺 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>
