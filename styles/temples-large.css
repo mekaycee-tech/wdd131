@@ -1,0 +1,25 @@
+/* This file is loaded when the screen width is 640px or larger */
+
+/* Hide the toggle button */
+#menuButton {
+    display: none;
+}
+
+/* Reset navigation styles to sit inline */
+nav {
+    display: flex !important; /* Force visible on desktop */
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background-color: transparent;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+/* 3-Column layout for desktop screens */
+.grid-container {
+    grid-template-columns: repeat(3, 1fr);
+}

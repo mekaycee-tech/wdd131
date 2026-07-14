@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Mobile-first CSS -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <!-- Desktop-specific CSS -->
+    <link rel="stylesheet" href="styles/temples-large.css" media="min-width: 640px">
+    
+    <!-- Defer JS execution until HTML is loaded -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Temple Album</h1>
+        <!-- Hamburger Button for mobile view -->
+        <button id="menuButton" aria-label="Toggle Menu">&#9776;</button>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <div class="grid-container">
+            <!-- 9 Figure elements using placeholder temple images -->
+            <figure>
+                <img src="https://assets.ldscdn.org/f3/b2/f3b2ee30d367f08082f485dbbc0d15a514d4ff4e/san_diego_temple_mormon.jpeg" alt="San Diego California Temple" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="https://assets.ldscdn.org/f3/b2/f3b2ee30d367f08082f485dbbc0d15a514d4ff4e/san_diego_temple_mormon.jpeg" alt="San Diego California Temple" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="https://assets.ldscdn.org/f3/b2/f3b2ee30d367f08082f485dbbc0d15a514d4ff4e/san_diego_temple_mormon.jpeg" alt="San Diego California Temple" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="https://assets.ldscdn.org/f3/b2/f3b2ee30d367f08082f485dbbc0d15a514d4ff4e/san_diego_temple_mormon.jpeg" alt="San Diego California Temple" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="https://assets.ldscdn.org/f3/b2/f3b2ee30d367f08082f485dbbc0d15a514d4ff4e/san_diego_temple_mormon.jpeg" alt="San Diego California Temple" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="https://assets.ldscdn.org/f3/b2/f3b2ee30d367f08082f485dbbc0d15a514d4ff4e/san_diego_temple_mormon.jpeg" alt="San Diego California Temple" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="https://assets.ldscdn.org/f3/b2/f3b2ee30d367f08082f485dbbc0d15a514d4ff4e/san_diego_temple_mormon.jpeg" alt="San Diego California Temple" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="https://assets.ldscdn.org/f3/b2/f3b2ee30d367f08082f485dbbc0d15a514d4ff4e/san_diego_temple_mormon.jpeg" alt="San Diego California Temple" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="https://assets.ldscdn.org/f3/b2/f3b2ee30d367f08082f485dbbc0d15a514d4ff4e/san_diego_temple_mormon.jpeg" alt="San Diego California Temple" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> 🌺 Kelechi David Agoro 🌺 Nigeria</p>
+        <p class="last-modified">Last Modification: <span id="lastModifiedDate"></span></p>
+    </footer>
+
+</body>
+</html>
