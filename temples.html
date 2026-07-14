@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Album</title>
     
-    <!-- Meta tags for validation and SEO -->
+    <!-- Meta tags for validation -->
     <meta name="description" content="A simple and elegant photo album showcasing beautiful temples from around the world.">
     <meta name="author" content="Kelechi David Agoro">
     
@@ -14,8 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
-    <!-- Unified Stylesheet (Mobile-first with Media Queries inside) -->
+    <!-- Mobile-first CSS -->
     <link rel="stylesheet" href="styles/temples.css">
+    
+    <!-- Desktop-specific CSS (With correct rel="stylesheet" attribute added!) -->
+    <link rel="stylesheet" href="styles/temples-large.css" media="min-width: 640px">
     
     <!-- Defer JS execution until HTML is loaded -->
     <script src="scripts/temples.js" defer></script>

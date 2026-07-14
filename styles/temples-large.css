@@ -1,25 +1,28 @@
-/* This file is loaded when the screen width is 640px or larger */
+/* ==================================================
+   Media Query for Large Screens (640px and wider)
+   ================================================== */
+@media (min-width: 640px) {
+    /* Hide the mobile hamburger menu toggle button */
+    #menuButton {
+        display: none;
+    }
 
-/* Hide the toggle button */
-#menuButton {
-    display: none;
-}
+    /* Reset navigation styles to display inline side-by-side */
+    nav {
+        display: flex !important; /* Force visible on desktop */
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
 
-/* Reset navigation styles to sit inline */
-nav {
-    display: flex !important; /* Force visible on desktop */
-    flex-direction: row;
-    position: static;
-    width: auto;
-    background-color: transparent;
-}
+    nav a {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
 
-nav a {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-}
-
-/* 3-Column layout for desktop screens */
-.grid-container {
-    grid-template-columns: repeat(3, 1fr);
+    /* 3-Column layout for desktop grid container */
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

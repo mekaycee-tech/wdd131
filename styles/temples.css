@@ -66,7 +66,7 @@ nav a {
     transition: background 0.3s ease;
 }
 
-/* Adjusted active text color to var(--contrast-accent) for WCAG color contrast validation */
+/* Adjusted active text color to gold for WCAG color contrast validation */
 nav a:hover, nav a.active {
     background-color: rgba(255, 255, 255, 0.2);
     color: var(--contrast-accent);
@@ -131,33 +131,4 @@ footer p {
 
 .last-modified {
     color: #ffd54f; /* Yellowish highlight */
-}
-
-/* ==========================================
-   CSS Media Query for Large Screens (640px+)
-   ========================================== */
-@media (min-width: 640px) {
-    /* Hide the mobile hamburger menu toggle button */
-    #menuButton {
-        display: none;
-    }
-
-    /* Reset navigation styles to display inline side-by-side */
-    nav {
-        display: flex; 
-        flex-direction: row;
-        position: static;
-        width: auto;
-        background-color: transparent;
-    }
-
-    nav a {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-    }
-
-    /* 3-Column layout for desktop grid container */
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
