@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Nigeria - Country Page</title>
+    <!-- Linking our external style sheet -->
+    <link rel="stylesheet" href="styles/place.css">
+    <!-- Using defer ensures the script runs after the HTML loads -->
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Discover Nigeria</h1>
+    </header>
+
+    <main>
+        <!-- Hero Section using the srcset responsive design method -->
+        <section class="hero">
+            <picture>
+                <!-- Large screen view image -->
+                <source media="(min-width: 800px)" srcset="images/hero-large.webp">
+                <!-- Mobile view default image -->
+                <img src="images/hero-small.webp" alt="Beautiful landscape of Nigeria" loading="lazy">
+            </picture>
+            <div class="hero-label">
+                <h2>Welcome to the Giant of Africa</h2>
+            </div>
+        </section>
+
+        <!-- Data Section -->
+        <section class="data-card">
+            <h3>Facts &amp; Data</h3>
+            <ul>
+                <li><strong>Capital:</strong> Abuja</li>
+                <li><strong>Population:</strong> ~230 Million</li>
+                <li><strong>Language:</strong> English (Official), Igbo, Yoruba, Hausa</li>
+                <li><strong>Currency:</strong> Naira (₦)</li>
+                <li><strong>Calling Code:</strong> +234</li>
+            </ul>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather-card">
+            <h3 class="weather-title">Weather </h3>
+            <!-- The CSS pseudo-element will automatically place an emoticon after the heading in large screens -->
+            
+            <div class="weather-content">
+                <!-- Mobile view icon using inline SVG or image path -->
+                <div class="weather-icon-container">
+                    <img class="mobile-weather-icon" src="images/weather.svg" alt="Weather Icon">
+                </div>
+                
+                <ul>
+                    <li><strong>Temperature:</strong> <span id="temp">8</span>°C</li>
+                    <li><strong>Condition:</strong> Harmattan Haze</li>
+                    <li><strong>Wind Speed:</strong> <span id="wind">15</span> km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Kelechi David Agoro | Nigeria</p>
+        <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
