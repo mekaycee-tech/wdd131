@@ -1,0 +1,25 @@
+/* Media query for screens 640px and wider (Desktop View) */
+@media (min-width: 640px) {
+    /* Hide the hamburger button on desktop */
+    #menuButton {
+        display: none;
+    }
+
+    /* Display navigation horizontally */
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    /* Change grid layout to 3 columns on desktop */
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
