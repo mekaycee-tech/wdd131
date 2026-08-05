@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Kelechi David Agoro">
+  <meta name="description" content="Product Review Form to rate recent product installations and features.">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form action="review.html" method="get">
+      
+      <!-- Product Name (Required) -->
+      <div class="form-item">
+        <label for="product-name">Product Name <span class="required-indicator">*</span></label>
+        <select id="product-name" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+      </div>
+
+      <!-- Overall Rating (Required) -->
+      <fieldset class="form-item">
+        <legend>Overall Rating <span class="required-indicator">*</span></legend>
+        <div class="rating-container">
+          <label for="rating-1">
+            <span>&star;</span>
+            <input type="radio" id="rating-1" name="rating" value="1" required>
+          </label>
+          <label for="rating-2">
+            <span>&star;&star;</span>
+            <input type="radio" id="rating-2" name="rating" value="2" required>
+          </label>
+          <label for="rating-3">
+            <span>&star;&star;&star;</span>
+            <input type="radio" id="rating-3" name="rating" value="3" required>
+          </label>
+          <label for="rating-4">
+            <span>&star;&star;&star;&star;</span>
+            <input type="radio" id="rating-4" name="rating" value="4" required>
+          </label>
+          <label for="rating-5">
+            <span>&star;&star;&star;&star;&star;</span>
+            <input type="radio" id="rating-5" name="rating" value="5" required>
+          </label>
+        </div>
+      </fieldset>
+
+      <!-- Date of Installation (Required) -->
+      <div class="form-item">
+        <label for="install-date">Date of Installation <span class="required-indicator">*</span></label>
+        <input type="date" id="install-date" name="installDate" required>
+      </div>
+
+      <!-- Useful Features (Optional) -->
+      <fieldset class="form-item">
+        <legend>Which features did you find useful in the product? <em>(Check all that apply)</em></legend>
+        
+        <label class="checkbox-label" for="feature-durability">
+          <input type="checkbox" id="feature-durability" name="features" value="durability">
+          Durability
+        </label>
+        
+        <label class="checkbox-label" for="feature-ease">
+          <input type="checkbox" id="feature-ease" name="features" value="ease-of-use">
+          Ease of Use
+        </label>
+        
+        <label class="checkbox-label" for="feature-performance">
+          <input type="checkbox" id="feature-performance" name="features" value="performance">
+          Performance
+        </label>
+        
+        <label class="checkbox-label" for="feature-design">
+          <input type="checkbox" id="feature-design" name="features" value="design">
+          Design
+        </label>
+      </fieldset>
+
+      <!-- Written Review (Optional) -->
+      <div class="form-item">
+        <label for="review-text">Written Review <span>(Optional)</span></label>
+        <textarea id="review-text" name="reviewText" rows="5"></textarea>
+      </div>
+
+      <!-- User Name (Optional) -->
+      <div class="form-item">
+        <label for="username">Your Name <span>(Optional)</span></label>
+        <input type="text" id="username" name="username">
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-item">
+        <input type="submit" value="Post Review">
+      </div>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Kelechi David Agoro</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
