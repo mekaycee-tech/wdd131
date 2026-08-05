@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Read and increment completion counter via localStorage
   let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
   numReviews++;
   window.localStorage.setItem("numReviews-ls", numReviews);
@@ -9,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     counterElement.textContent = numReviews;
   }
 
-  // Footer metadata updates
   const currentYearSpan = document.getElementById("currentyear");
   const lastModifiedP = document.getElementById("lastModified");
 

@@ -17,50 +17,50 @@
   <main>
     <form action="review.html" method="get">
       
-      <!-- Product Name (Required) -->
+      <!-- Product Name -->
       <div class="form-item">
-        <label for="product-name">Product Name <span class="required-indicator">*</span></label>
+        <label for="product-name">Product Name</label>
         <select id="product-name" name="productName" required>
-          <option value="" disabled selected>Select a Product ...</option>
+          <option value="" disabled selected>Choose a Product ...</option>
         </select>
       </div>
 
-      <!-- Overall Rating (Required) -->
+      <!-- Overall Rating -->
       <fieldset class="form-item">
-        <legend>Overall Rating <span class="required-indicator">*</span></legend>
-        <div class="rating-container">
-          <label for="rating-1">
-            <span>&star;</span>
+        <legend>Overall Rating</legend>
+        <div class="rating-group">
+          <div class="rating-option">
+            <span>☆</span>
             <input type="radio" id="rating-1" name="rating" value="1" required>
-          </label>
-          <label for="rating-2">
-            <span>&star;&star;</span>
+          </div>
+          <div class="rating-option">
+            <span>☆☆</span>
             <input type="radio" id="rating-2" name="rating" value="2" required>
-          </label>
-          <label for="rating-3">
-            <span>&star;&star;&star;</span>
+          </div>
+          <div class="rating-option">
+            <span>☆☆☆</span>
             <input type="radio" id="rating-3" name="rating" value="3" required>
-          </label>
-          <label for="rating-4">
-            <span>&star;&star;&star;&star;</span>
+          </div>
+          <div class="rating-option">
+            <span>☆☆☆☆</span>
             <input type="radio" id="rating-4" name="rating" value="4" required>
-          </label>
-          <label for="rating-5">
-            <span>&star;&star;&star;&star;&star;</span>
+          </div>
+          <div class="rating-option">
+            <span>☆☆☆☆☆</span>
             <input type="radio" id="rating-5" name="rating" value="5" required>
-          </label>
+          </div>
         </div>
       </fieldset>
 
-      <!-- Date of Installation (Required) -->
+      <!-- Date of Installation -->
       <div class="form-item">
-        <label for="install-date">Date of Installation <span class="required-indicator">*</span></label>
+        <label for="install-date">Date of Installation</label>
         <input type="date" id="install-date" name="installDate" required>
       </div>
 
-      <!-- Useful Features (Optional) -->
+      <!-- Useful Features -->
       <fieldset class="form-item">
-        <legend>Which features did you find useful in the product? <em>(Check all that apply)</em></legend>
+        <legend>Which features did you find useful in the product?<br><em>(Check all that apply)</em></legend>
         
         <label class="checkbox-label" for="feature-durability">
           <input type="checkbox" id="feature-durability" name="features" value="durability">
@@ -83,15 +83,15 @@
         </label>
       </fieldset>
 
-      <!-- Written Review (Optional) -->
+      <!-- Written Review -->
       <div class="form-item">
-        <label for="review-text">Written Review <span>(Optional)</span></label>
-        <textarea id="review-text" name="reviewText" rows="5"></textarea>
+        <label for="review-text">Written Review <span class="optional">(Optional)</span></label>
+        <textarea id="review-text" name="reviewText" rows="6"></textarea>
       </div>
 
-      <!-- User Name (Optional) -->
+      <!-- User Name -->
       <div class="form-item">
-        <label for="username">Your Name <span>(Optional)</span></label>
+        <label for="username">Your Name <span class="optional">(Optional)</span></label>
         <input type="text" id="username" name="username">
       </div>
 
@@ -104,7 +104,7 @@
   </main>
 
   <footer>
-    <p>&copy;<span id="currentyear"></span> Kelechi David Agoro</p>
+    <p>&copy;<span id="currentyear"></span> 🌺 Kelechi David Agoro 🌺</p>
     <p id="lastModified"></p>
   </footer>
 </body>

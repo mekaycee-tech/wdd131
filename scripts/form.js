@@ -9,7 +9,6 @@ const products = [
 document.addEventListener("DOMContentLoaded", () => {
   const selectElement = document.getElementById("product-name");
 
-  // Populate dynamic select options: array id -> option value, array name -> display text
   products.forEach(product => {
     const option = document.createElement("option");
     option.value = product.id;
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     selectElement.appendChild(option);
   });
 
-  // Footer metadata updates
   const currentYearSpan = document.getElementById("currentyear");
   const lastModifiedP = document.getElementById("lastModified");
 
