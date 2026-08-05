@@ -48,13 +48,15 @@ fieldset {
   margin: 0;
 }
 
-label, legend {
+label, 
+legend {
   font-weight: bold;
   font-size: 1.05rem;
   color: #0f172a;
 }
 
-.optional, legend em {
+.optional, 
+legend em {
   font-weight: normal;
   font-size: 0.95rem;
   color: #0f2c59;
@@ -73,7 +75,6 @@ textarea {
   color: #000000;
 }
 
-/* Rating layout matching screenshot */
 .rating-group {
   display: flex;
   justify-content: space-between;
@@ -100,7 +101,6 @@ textarea {
   cursor: pointer;
 }
 
-/* Checkbox alignment matching sample layout */
 .checkbox-label {
   display: flex;
   align-items: center;
@@ -116,7 +116,6 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-/* Submit button matching visual style */
 input[type="submit"],
 .btn-link {
   background-color: #f8fafc;
@@ -137,7 +136,6 @@ input[type="submit"]:hover,
   background-color: #e2e8f0;
 }
 
-/* Confirmation section */
 .confirmation-container {
   background-color: #ffffff;
   padding: 2rem;
@@ -155,7 +153,6 @@ input[type="submit"]:hover,
   font-size: 1.1rem;
 }
 
-/* Footer structure */
 footer {
   background-color: #0f2c59;
   color: #ffffff;
@@ -166,7 +163,6 @@ footer {
   margin-top: auto;
 }
 
-/* W3C compliant query without nested CSS */
 @media screen and (min-width: 600px) {
   main {
     max-width: 520px;
