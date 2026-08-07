@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact form for inquiries and guide feedback.">
+  <title>Contact Us - Urban Heritage Guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Urban Heritage Architecture Guide</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="landmarks.html">Landmarks Gallery</a></li>
+        <li><a href="explore.html">Interactive Explore</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="contact-form">
+      <h2>Send Us a Message</h2>
+      
+      <label for="user-name">Your Full Name:</label>
+      <input type="text" id="user-name" required placeholder="Enter your name">
+
+      <label for="user-email">Email Address:</label>
+      <input type="email" id="user-email" required placeholder="name@example.com">
+
+      <label for="user-message">Inquiry or Feedback:</label>
+      <textarea id="user-message" rows="4" required placeholder="Type your message..."></textarea>
+
+      <button type="submit">Submit Form</button>
+      <p id="form-feedback" style="margin-top: 10px; font-weight: bold;"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Urban Heritage Architecture Guide[cite: 2] | <a href="references.html">References Page</a></p>
+  </footer>
+
+</body>
+</html>
