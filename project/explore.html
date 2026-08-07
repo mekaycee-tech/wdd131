@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Kelechi David Agoro">
   <meta name="description" content="Interactive filtering and tour planning for local architectural landmarks.">
   <title>Interactive Explore - Urban Heritage Guide</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -36,7 +37,7 @@
     <!-- Filtered Results Container -->
     <div id="dynamic-landmarks" class="landmark-grid"></div>
 
-    <hr style="margin: 30px 0;">
+    <hr class="divider">
 
     <section class="estimator-box">
       <h2>Trip Duration Estimator</h2>
@@ -45,12 +46,12 @@
       <input type="number" id="landmark-count" min="1" max="10" value="1">
       <button id="calculate-btn">Calculate Total Time</button>
 
-      <p id="estimation-result" style="margin-top: 15px; font-weight: bold; color: #D00000;"></p>
+      <p id="estimation-result" class="result-text"></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Urban Heritage Architecture Guide[cite: 2] | <a href="references.html">References Page</a></p>
+    <p>&copy; 2026 Urban Heritage Architecture Guide | <a href="references.html">References Page</a></p>
   </footer>
 
 </body>

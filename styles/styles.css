@@ -75,6 +75,19 @@ main {
   margin-bottom: 10px;
 }
 
+/* Headings & Dividers */
+.section-title {
+  font-family: Georgia, serif;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.divider {
+  margin: 30px 0;
+  border: 0;
+  border-top: 1px solid #CBD5E1;
+}
+
 /* Responsive Grid for Landmark Cards */
 .landmark-grid {
   display: grid;
@@ -144,6 +157,17 @@ button {
 
 button:hover {
   background-color: var(--primary);
+}
+
+.result-text {
+  margin-top: 15px;
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+.feedback-text {
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 /* Footer */
